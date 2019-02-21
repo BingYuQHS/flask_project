@@ -1,0 +1,480 @@
+﻿html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,em{margin:0;padding:0;}
+body{font-size:12px;line-height:1.6;font-family:宋体,sans-serif;cursor:default;color:#000;}
+img,fieldset{border:0;margin:0;padding:0;}
+input,button{margin:0;padding:0;}
+a{color:#0055AA; text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul li{list-style-type:none;}
+input,select{font-size:12px;}
+.layoutfix{display:inline-block;}
+.layoutfix{display:block;overflow:hidden;}
+.btn_big5, .btn_english, .btn_gb, #navgation li a, #navgation li a span, #navgation li.current_page_item, .guideline, .guideline_right, .guideline_left, .guide_help, .sub_menu a, .member_level01{background-image: url(http://pic.ctrip.com/common/bg_head.gif); background-repeat: no-repeat;}
+.searchbox, .selected_tab_hotel_current, .selected_tab_flt_current, .selected_tab_package_current, .special_offer, .column_lt, .column_lf, .column_ctc, .column_cfc, .column_ctr, .column_rt, .links_header, #footer .pic_copyright01, #footer .pic_copyright02, #footer .pic_copyright03 , .service_car, .service_pass, .query_botton, .tools_map, .tools_train, .tools_weather, .tools_tips, .tools_flt, .tools_exhibition, .record a, .vip_hot, .sub_tab li, .sub_tab .sub_tab_current, .sub_tab, .searchbox_function, .searchbox_help, .searchbox_submit, .member_level02, .member_level03, .member_level04, .member_level05{background-image:url(http://pic.ctrip.com/common/bg_mainbox.png); background-repeat:no-repeat;}
+#wrapper{width:778px;margin:0 auto;	padding-top:10px;}
+#footer{text-align:center;border-top:1px #B2D4F5 dashed;padding-top:20px;}
+#footer .pic_copyright01, #footer .pic_copyright02, #footer .pic_copyright03, #footer .pic_copyright04, #footer .pic_copyright05, #footer .pic_copyright06{float:left;overflow:hidden;height:72px;}
+#footer .pic_copyright01{width:120px;background-position:-182px -597px;margin-left:160px;}
+#footer .pic_copyright02{width:77px;background-position:-303px -597px;}
+#footer .pic_copyright03{width:100px;background:url(http://pic.ctrip.com/common/chenxing.jpg) no-repeat;}
+#footer .pic_copyright04{width:52px;margin:0 5px;background:url(http://pic.ctrip.com/common/baojin.gif) no-repeat center center;}
+#footer .pic_copyright05{width:42px;background:url(http://pic.ctrip.com/common/pic_pp.gif) no-repeat center center;}
+#footer .pic_copyright06{width:42px;background:url(http://pic.ctrip.com/common/pic_aa.gif) no-repeat center center;}
+/* header */
+.pagetitle{width:729px;margin:0 auto;}
+.pagetitle h1, .pic_pagetitle{float:left;}
+.pic_pagetitle{width:468px;height:60px;margin:0 auto;margin-left:25px;}
+.btn_language{float:right;padding-top:8px;}
+.btn_big5, .btn_english, .btn_gb{display:block;width:57px;height:15px;overflow: hidden;}
+.btn_big5{background-position: -57px -64px;}
+.btn_english{background-position:0 -64px;margin-top:15px;}
+.btn_gb{background-position: -114px -64px;}
+/*navgation*/
+#navgation{padding-left:10px; margin-top:10px;_width:778px;overflow:hidden;}
+#navgation li{float:left; margin-right: 2px;}
+#navgation li a{display:block;_display:inline-block; height:23px; line-height:25px; text-align:center; background-position: 0 0;overflow:hidden;}
+#navgation li a:hover{text-decoration: none;}
+#navgation li a span{background-position:100% 0; display:block;	margin-left:10px; padding-right:10px; cursor: pointer;}
+#navgation li.page_item_current a{height:27px;}
+#navgation li.page_item_current{position:relative; z-index: 2;}
+#navgation li.page_item_current a{background-position: 0 -25px;	color:#fff;}
+#navgation li.page_item_current a:hover{color:#fff;}
+#navgation li.page_item_current a span{background-position:100% -25px;}
+#navgation li.link_funcation{line-height: 25px;	height: 25px; color:#0055AA; margin:0;}
+#navgation li.link_funcation a{background:none;}
+#navgation li.link_funcation a:hover{text-decoration: underline;}
+/*sub_menu*/
+.guideline{height:25px;	line-height: 25px; color:#fff; background-position: 0 -138px; background-repeat: repeat-x;margin-top:-4px; position: ; z-index: 1;}
+.guideline_left, .guideline_right{width:10px;}
+.guideline_left{background-position:0 -96px;}
+.guideline li.guideline_right{float:right; background-position:-20px -96px;}
+.guideline li{float:left;}
+.guide_help{padding-left: 20px;	background-position:-96px -108px;}
+.guideline li.sub_menu{float:right;}
+.member_level01, .member_level02, .member_level03, .member_level04, .member_level05{margin-left:35px;padding-left:16px;color:#fff;text-decoration:none;}
+.member_level01, .sub_menu a{color:#fff;padding-left:10px;background-position:-102px -98px;}
+.member_level01:hover, .sub_menu a:hover{text-decoration: none;color:#ffcc66;background-position: -102px -81px;}
+.member_level02{background-position:-500px -611px;}
+.member_level03{background-position:-500px -626px;}
+.member_level04{background-position:-497px -643px;padding-left:18px;}
+.member_level05{background-position:-491px -658px;padding:1px 0 0 25px;}
+/*attentions everyday;*/
+.pay_attention, .ico_attention, .close_attention{background-image:url(http://pic.ctrip.com/common/bg_attention.gif);background-repeat:no-repeat;}
+.pay_attention{min-height:36px;_height:36px;line-height:18px;background-position:0 -80px;background-repeat:repeat-x;}
+.ico_attention{padding:3px 0 0 35px; background-position:-35px 0;}
+.close_attention{float:right;width:27px;height:24px;overflow:hidden;background-position:left top;}
+/*column_top*/
+.searchbox, .pic_fresh{
+	float:left;
+	overflow: hidden;
+}
+.searchbox{
+	width:404px;
+	height:217px;
+	background-position:0 -112px;
+}
+.txt_welcome{color:#fff;padding:5px 0 0 10px;}
+.tab_searchbox {
+	margin:8px 0 0 11px;
+}
+.tab_searchbox .tab_item{
+	height: 35px;
+	width:83px;
+	overflow: hidden;
+	float:left;
+	cursor:pointer;
+}
+.tab_searchbox .selected_tab_hotel_current{background-position: -427px -64px;margin-left:2px;cursor:default;}
+.tab_searchbox .selected_tab_flt_current{background-position: -427px -112px;cursor:default;}
+.tab_searchbox .selected_tab_package_current{background-position:-427px -160px;margin-left:-2px;cursor:default;}
+.searchbox_content{
+	clear:both;
+	padding:15px 30px;
+	width:344px;
+	height:122px;
+	overflow:hidden;
+}
+.searchbox_content ul li span, .searchbox_pkg p span{color:red;margin-right:1px;}
+.searchbox_content .searchbox_submit{
+	float:left;
+	cursor:pointer;
+	border:0;
+	width:70px;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	background-position:0 -592px;
+	margin-left:3px;
+}
+.searchbox_function{
+	float:left;
+	width:55px;
+	height:21px;
+	line-height:21px;
+	margin-right:2px;
+	padding-left:20px;
+	background-position:-496px -222px;
+}
+.searchbox_help{
+	float:left;
+	width:14px;
+	height:21px;
+	background-position:-497px -253px;
+}
+.searchbox_btnlink{clear:both;width:342px;margin-top:10px;}
+.searchbox_btnlink div{float:right;}
+
+.searchbox_hotel ul li, .searchbox_flt ul li{
+	float:left;
+	width:97px;
+	margin-right:10px;
+	_margin-right:4px;
+}
+.searchbox_hotel input, .searchbox_flt input{width:97px;}
+.searchbox_hotel select{width:100px;}
+.searchbox_hotel ul li.searchbox_hotel_name{width:170px;}
+.searchbox_hotel ul li.searchbox_hotel_name input{width:156px;}
+.searchbox_flt select{width:51px;}
+.searchbox_pkg p{
+	float:left;
+	width:125px;
+	margin-right:5px;
+	text-align: left;
+}
+.searchbox_pkg p input{
+	width:115px;
+}
+
+
+.pic_fresh, .pic_367x126, .special_offer{width:367px;}
+.pic_fresh{
+	margin:5px 0 0 7px;
+}
+.pic_367x126{height:126px;}
+.special_offer{
+	height:66px;
+	margin-top:3px;
+	padding:18px 0 0 4px;
+	background-position: 0 0;
+}
+.special_offer a{
+	float:left;
+	width:180px;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/*columns*/
+.mainbox {margin-top:5px;}
+.column_left, .column_center, .column_right{float: left;}
+.column_left{width:192px;}
+.column_center{width:404px;margin:0 7px;_margin:0 6px;}
+.column_right{width:168px;}
+.column_lt, .column_ctc, .column_ctr, .column_rt{height:28px;line-height: 28px;overflow: hidden;font-size: 12px;padding-left:7px;}
+.column_lt a, .column_ctc a, .column_ctr a, .column_rt a{float:right;padding-right:4px;font-weight:normal;}
+.column_lf, .column_cfc{height: 5px;overflow: hidden;margin-bottom: 5px;}
+.column_lt{width:185px;background-position: 0 -448px;}
+.column_lf{width:192px;background-position: 0 -476px;}
+.column_ctc{width:397px;background-position: 0 -400px;}
+.column_cfc{width:404px;background-position:0 -428px;}
+.column_ctr{width:397px;height:30px;background-position: 0 -352px;}
+.column_rt{width:161px;	background-position: 0 -496px;}
+.column_cmc, .column_lm{border-left:1px #A4C8E8 solid;border-right:1px #A4C8E8 solid;padding:5px;}
+.column_cmr, .column_rm{border:1px #A4C8E8 solid;border-top:none;margin-bottom:5px;padding:5px;}
+.column_rm{background:#f4f8ff;padding:5px;}
+.sub_tab{
+	height:18px;
+	padding:3px 0 0 4px;
+	line-height:18px;
+	background-position:0 -86px;
+}
+.sub_tab li{
+	float:left;
+	margin-right:1px;
+	color:#fff;
+	width:29px;
+	height:18px;
+	line-height:19px;
+	text-align:center;
+	cursor:pointer;
+	background-position:-481px -19px;
+}
+.sub_tab .sub_tab_current{
+	background-position:-481px 0;
+	cursor:default;
+	color:#F98209;
+}
+.hotpackage a, .hotpackage a:hover, .give_hotel a, .give_hotel a:hover{
+	display:block;
+	padding:0 6px;
+	height:22px;
+	line-height:22px;
+	border-bottom:1px dashed #B2D4F5;
+	text-decoration:none;
+	cursor:pointer;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.give_hotel a, .give_hotel a:hover{width:178px;}
+.hotpackage a, .hotpackage a:hover{
+	width:388px;
+	height:23px;
+	line-height:23px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.hotpackage span, .hotpackage address{
+	float:left;
+}
+.hotpackage span{
+	text-align:right;
+	color:#F98510;
+	white-space:nowrap;
+	width:77px;
+	overflow:hidden;
+}
+.hotpackage address{
+	font-style:normal;
+	width:300px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-right:10px; 
+}
+@media all and (min-width:0px){.hotpackage address{margin-right:7px;}}
+.vip_shop a, .vip_shop a:hover{
+	display:block;
+	width:180px;
+	height:20px;
+	line-height:20px;
+	text-decoration:none;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.vip_hot{
+	background-position:-485px -562px;
+	padding:0 13px;
+	*display:inline-block;
+	margin-left:4px;
+}
+.vip_key{
+	color:#F98510;
+	margin-right:4px;
+}
+.column_leftpic{
+	width:190px;
+	height:95px;
+	overflow:hidden;
+	margin-top:5px;
+}
+.termini a{
+	float:left;
+	width:51px;
+	margin:11px 0 0 22px;
+	padding-top:51px;
+	text-align:center;
+	background-image:url(http://pages.ctrip.com/images/destination/forhome/pic_termini.jpg);
+	background-repeat:no-repeat;
+}
+.termini_01{background-position:0 0;}
+.termini_02{background-position:-51px 0;}
+.termini_03{background-position:-102px 0;}
+.termini_04{background-position:-153px 0;}
+.termini_05{background-position:-204px 0;}
+.record{padding:8px 5px 7px 5px;}
+.record a{
+	float:left;
+	width:180px;
+	height:23px;
+	line-height:23px;
+	padding:0 0 0 8px;
+	margin:0 8px 2px 0;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	background-position:-505px -582px;
+}
+.column_centerpic{
+	width:400px;
+	height:80px;
+	margin:5px 0 5px 2px;
+}
+.tools_map, .tools_train, .tools_weather, .tools_tips, .tools_flt, .tools_exhibition{
+	width:48px;
+	height:25px;
+	overflow:hidden;
+	line-height:25px;
+	padding:0 5px 0 23px;
+}
+.tools_map, .tools_weather, .tools_flt{float:left;}
+.tools_train, .tools_tips, .tools_exhibition{float:right;}
+.tools_map{background-position:-488px -285px;}
+.tools_train{background-position:-488px -318px;}
+.tools_weather{background-position:-488px -352px;}
+.tools_tips{background-position:-488px -396px;}
+.tools_flt{background-position:-488px -429px;}
+.tools_exhibition{background-position:-488px -461px;}
+.service_car, .service_pass{
+	float:left;
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+}
+.service_car{
+	background-position:-489px -492px;
+	width:48px;
+	padding-left:25px;
+	margin:0 3px;
+}
+.service_pass{
+	background-position:-493px -524px;
+	width:60px;
+	padding-left:20px;
+}
+.querybox{
+	clear:both;
+	margin-top:5px;
+	_margin-top:0;
+	padding-top:5px;
+	height:21px;
+	text-align:center;
+	border-top:1px #A4C8E8 solid;
+}
+.query_botton{
+	border:0;
+	background-position:0 -640px;
+	width:43px;
+	height:19px;
+	line-height:19px;
+	color:#fff;
+	cursor:pointer;
+}
+.query_text{
+	width:100px;
+}
+.column_rightpic{
+	width:166px;
+	height:50px;
+	margin-bottom:5px;
+}
+.news_cooper{
+	padding:2px 5px;
+}
+.news_cooper a, .news_hot a{
+	display:block;
+	width:156px;
+	overflow:hidden;
+	height:21px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/*column_bottom*/
+.column_bottom{
+	clear:both;
+	background:#f8f8f8;
+	border:1px #dedede solid;
+	border-bottom: 0;
+	padding:10px 15px;
+	width:746px;
+}
+.column_bottompics{
+	list-style:none;
+	padding-bottom:10px;
+}
+.column_bottompics li{
+	float:left;
+	width:160px;
+	height: 70px;
+	padding-left:21px;
+}
+.links{clear:both;margin-top:5px;}
+.links_header{
+	height:16px;
+	padding:5px 0px 5px 0px;
+	background: none;
+	font-weight: bold;
+}
+/*alert*/
+.alert_tc, .alert_bc, .alert_tl, .alert_tr, .alert_br, .alert_bl{height:6px;}
+.alert_tl, .alert_tr, .alert_br, .alert_bl{width:6px;overflow:hidden;}
+.alert_tc, .alert_bc{width:auto;}
+.alert_ml, .alert_mr{height:auto;}
+.alert_tc div, .alert_bc div{height:6px; overflow:hidden;}
+.alert_ml div, .alert_mr div{width:6px; overflow:hidden;}
+.alert_tc, .alert_mc, .alert_bc, .alert_ml, .alert_mr{background:#FFFFE8;}
+.alert_tl,.alert_tr,.alert_bl,.alert_br{background-image:url(http://pic.ctrip.com/common/bg_alert.gif);background-repeat:no-repeat;}
+.alert_tc{border-top:1px #FFDF47 solid;} 
+.alert_bc{border-bottom:1px #FFDF47 solid;} 
+.alert_ml{border-left:1px #FFDF47 solid;}
+.alert_mr{border-right:1px #FFDF47 solid;}
+.alert_mc{background:#FFFFE8; width:auto; height:auto;}
+.alert_tl{background-position:left top;}
+.alert_tr{background-position:right top;}
+.alert_bl{background-position:left bottom;}
+.alert_br{background-position:right bottom;}
+/*destinations&departures*/
+.departures{width:187px;*width:193px;overflow:hidden;padding:3px;border:1px solid #7F9DB9;background:#FFF;font-family:Simsun;position:absolute;z-index:200;margin:121px 0 0 30px;}
+@media all and (min-width:0px){.departures{margin:118px 0 0 30px;}}
+.departures div{height:24px;line-height:24px;overflow:hidden;color:#666;border-bottom:dashed 1px #666;margin-bottom:3px;display:inline-block;}
+.departures div{display:block;}
+.departures a{height:22px;line-height:22px;float:left;margin:0 10px;width:26px;}
+.departures a:hover {text-decoration:underline;}
+.departures a {white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.destination{width:340px;_width:370px;overflow:hidden;padding:10px;border:1px solid #7F9DB9;background:#FFF;font-family:Simsun;position:absolute;z-index:200;margin:121px 0 0 160px;}
+@media all and (min-width:0px){.destination{margin:118px 0 0 160px;}}
+.tips{background:#f8f8f8;border:1px #bfc0c1 solid;margin-bottom:5px;padding-left:5px;height:23px;line-height:23px;color:#535353;font-weight:bold;float:left;width:98%;}
+.bound{width:100%;}
+.destination dl{width:162px;float:left;	overflow:hidden;}
+* html .destination dl{width:175px;}
+.destination .brand{margin-left:16px;}
+.destination dl dt{font-weight:normal;border-bottom:1px #aeaeae dashed;height:24px;line-height:24px;color:#535353;}
+.destination dl dd{margin:2px;float:left;}
+.destination a {white-space:nowrap;text-overflow:ellipsis;overflow:hidden;width:62px;margin:5px 12px 0 0;}
+/*calendar*/
+#tuna_calendar {margin: 0px;font-size: 12px;font-family: Verdana, Arial, Helvetica, sans-serif;background: transparent;width:282px;padding: 1px 0 0 1px;position:absolute;z-index:1000;*padding:0;	*width:284px;}
+@media all and (min-width:0){#tuna_calendar{width:284px}}
+#tuna_calendar a {color:#0055AA;text-decoration:none;}
+#tuna_calendar .day0,#tuna_calendar .day6  {color:#FFFF00;}
+#tuna_calendar .current_day{text-decoration: underline;	font-weight:bold;color:#0055AA;}
+#tuna_calendar .current_day:hover{background:#C8E3FC;text-decoration: underline;}
+#tuna_calendar .cue_day{color:#A0522D;}
+#tuna_calendar .cue_day:hover{background: #C8E3FC;}
+#tuna_calendar .selected_day{width:18px;height:18px;color: #0055aa;	text-decoration: none;border: 1px solid #7CB9F4;	background: #C8E3FC;}
+#tuna_calendar .limit_day{text-decoration:line-through;}
+#tuna_calendar .limit_day:hover{text-decoration:line-through;}
+#tuna_calendar .over_day, #tuna_calendar .blank_day, #tuna_calendar .limit_day{color: #999;cursor: default;}
+#tuna_calendar .enable_day:hover{background:#C8E3FC;}
+#tuna_calendar .currentmonth01 th {background:#0055AA;}
+#tuna_calendar table {border-collapse:collapse;	border:solid 1px #7F9DB9;float:left;background:#FFF;}
+#tuna_calendar th,#tuna_calendar td {height:20px;line-height:20px;text-align:center;}
+#tuna_calendar thead th {background:#E7F1FD;color:#0055AA;font-weight: bold;}
+#tuna_calendar th {background:#599DE9;font-weight:bold;color:#FFF;}
+#tuna_calendar th span {color:#FFFF00;}
+#tuna_calendar thead th span  {font-weight: normal;color:#0055AA;cursor:pointer;text-align:center;width:40px;line-height:20px;*line-height:16px;}
+#tuna_calendar td a {display:block;height:20px;width:20px;overflow:hidden;text-align:center;line-height:20px;}
+#tuna_calendar .calendar_title01 span {float:left;}
+#tuna_calendar .calendar_title01 div {float:left;}
+#tuna_calendar .calendar_title02 span {float:right;}
+#tuna_calendar .calendar_title02 div {float:right;}
+/*address*/
+#tuna_address {font-size: 12px;font-family: Arial, Simsun;}
+#tuna_address #address_warp {width: 220px;border: 1px solid #7F9DB9;background: #FFF;padding: 4px;margin: 0px;text-align: left;min-height:305px;}
+* html #tuna_address #address_warp {height:305px;}
+#tuna_address #address_message {display: block;line-height: 20px;padding: 0px 0px 0px 5px;color: #666;border-bottom: 1px dashed #aaa;font-family:"Simyou";word-wrap:break-word;word-break:break-all;width:207px;}
+#tuna_address #address_list {margin: 5px 0 0 0;	padding: 0px;min-height:277px;}
+* html #tuna_address #address_list {height:277px;}
+#tuna_address #address_list span {margin: 0px;padding: 0px;	float: left;text-align: left;}
+#tuna_address #address_list a {padding: 1px 5px 0px 5px;text-align: right;border-top: 1px solid #FFF;border-bottom: 1px solid #FFF;cursor: pointer;line-height: 20px;color: #0055aa;display:block;text-decoration:none;min-height:20px;}
+* html #tuna_address #address_list a {height:20px;}
+#tuna_address #address_list a:hover {background: #E7F1FD;border-top: 1px solid #7F9DB9;border-bottom: 1px solid #7F9DB9;}
+#tuna_address .address_selected {background: #C8E3FC;color: #FFF;border-top: 1px solid #C8E3FC;	border-bottom: 1px solid #C8E3FC;}
+#tuna_address .address_pagebreak {padding:0;margin:0;display:none;line-height:25px;text-align:center;}
+#tuna_address .address_pagebreak a {color:#0055aa;font-family: Arial, Simsun, sans-serif;	text-decoration:underline;padding:0px 4px 0px 4px;margin:0;font-size:14px;}
+#tuna_address #address_arrowl,#tuna_address #address_arrowr {color:#0055aa;}
+#tuna_address a.address_current {color:black;text-decoration:none;}

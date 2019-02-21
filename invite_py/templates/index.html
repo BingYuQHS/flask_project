@@ -1,0 +1,161 @@
+
+<!--***************编制邀标书的主页面*****************-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编制邀标书首页</title>
+    <!--bootstrap的相关文件引用-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-
+            Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+    <!--首页css样式文件引入-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+
+    <!--日历控件文件引入-->
+    <link href="{{ url_for('static',filename='css/private_index081120.css') }}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{{ url_for('static',filename='js/private_index_081022.js') }}"
+            charset="utf-8">
+    </script>
+
+</head>
+<body>
+    <!--导航栏-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+              <spin>QS</spin><spin>Happy</spin><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">系统简介</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  系统功能 <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="请输入关键字">
+            </div>
+            <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">登录</a></li>
+              <li><a href="#">注册</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--邀标书表单-->
+    <form class="form-horizontal" method="post" name="hotelForm" onsubmit="return false;" action="{{ url_for('commit')}}">
+        <div class="container">
+            <div class="nav-top">
+                <div class="create">
+                    <button type="reset" class="btn btn-primary navbar-btn">
+                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                        重置
+                    </button>
+                </div>
+                  <div class="upload">
+                      <button  class="btn btn-primary navbar-btn">
+                           <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                          上传
+                      </button>
+                </div>
+            </div>
+            <div class="con-top">
+                <div class="sm-left">
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">编号</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="id" class="form-control" id="inputEmail3" placeholder="输入邀标书编号（如6）">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">开标时间</label>
+                        <div class="col-sm-10">
+                            <input  id="starttime" mod_calendar_rangestart="#" mod_calendar_focusnext="true"
+                                    mod_notice_tip="yyyy-mm-dd" mod="calendar|notice"
+                                    type="text" name="starttime" class="form-control" placeholder="格式（如2017-10-5）">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-right">
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">项目编号</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="project_id" class="form-control" id="inputEmail3" placeholder="输入项目编号（如1）">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">开标地点</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="openposition" class="form-control" id="inputEmail3" placeholder="输入开标地点">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con-bottom">
+                <div class="form-group">
+                    <div class="la">
+                        <label for="exampleInputName2">招标内容</label>
+                    </div>
+                    <div class="con">
+                        <textarea  rows="5" name="content" class="form-control" id="inputEmail3" placeholder="请输入招标内容"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="la">
+                        <label for="exampleInputName2">招标须知</label>
+                    </div>
+                    <div class="con">
+                        <textarea  rows="3" name="notice" class="form-control" id="inputEmail3" placeholder="请输入招标的一些注意事项"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="la-2">
+                        <label for="exampleInputName2">备注</label>
+                    </div>
+                    <div class="con">
+                        <textarea  rows="3" name="remarks" class="form-control" id="inputEmail3" placeholder="请输入备注，此项可选填！"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--日历选择调用的js-->
+     <script type="text/javascript">
+        $$.module.searchBox.init();
+    </script>
+</body>
+</html>

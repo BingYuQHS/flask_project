@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src={{ avatar|default('http://p0.so.qhimgs1.com/bdr/_240_/t01f188b9ddbaa50090.png') }}>
+    <hr>
+    <p>评论数：({{ comments|length }})</p>
+    {% for comment in comments %}
+        <p>用户：{{ comment.user }}</p>
+        <p>评论内容:{{ comment.content }}</p>
+        <p></p>
+    {% endfor %}
+</body>
+</html>

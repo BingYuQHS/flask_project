@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日历控件</title>
+    <link href="{{ url_for('static',filename='css/private_index081120.css') }}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{{ url_for('static',filename='js/private_index_081022.js') }}"
+            charset="utf-8">
+    </script>
+
+<!--   <link href="http://webresource.ctrip.com/styles/common/private_index081120.css" rel="stylesheet" type="text/css" />
+       <script type="text/javascript" src="http://webresource.ctrip.com/code/js/private/tuna_071206/private_index_081022.js"
+          charset="utf-8">
+      </script>-->
+</head>
+<body>
+    <form action="" method="post" name="hotelForm" onsubmit="return false;">
+        <input id="starttime" name="starttime" mod_calendar_rangestart="#" mod_calendar_focusnext="true"
+               mod_notice_tip="yyyy-mm-dd" mod="calendar|notice" />
+        <input id="deptime" name="deptime" mod_calendar_reference="starttime" mod_calendar_rangestart="#"
+               mod_notice_tip="yyyy-mm-dd" mod="calendar|notice" />
+        <!--<input name="perdate" type="hidden" value="2009-1-4"/>
+        <input name="postdate" type="hidden" value="2009-3-5" />-->
+    </form>
+    <script type="text/javascript">
+        $$.module.searchBox.init();
+    </script>
+</body>
+</html>
